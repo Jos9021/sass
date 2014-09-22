@@ -1,0 +1,37 @@
+/*------------------------------------*\
+    $BUTTONS
+\*------------------------------------*/
+.btn {
+	&,
+	&[type="submit"] {
+  	display: inline-block;
+  	background: $gray-dark;
+  	border: none;
+  	color: $white;
+  	line-height: 1;
+  	font-weight: bold;
+  	padding: $pad;
+  	border: 0;
+  	text-align: center;
+  	width: auto;
+  	&:hover, &:focus {
+  		color: $white;
+  	}
+  	&.is-disabled {
+  		background: $gray-light-2;
+  		color: $gray-light-4;
+  	}
+	}
+}
+
+.btn--alt {
+  &,
+  &[type="submit"] {
+    @extend .btn;
+    background: $gray-light-4;
+  }
+}
+
+.text-btn {
+	font-style: italic;
+}

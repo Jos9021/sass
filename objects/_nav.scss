@@ -1,0 +1,35 @@
+/*------------------------------------*\
+    $NAVIGATION
+\*------------------------------------*/
+
+.nav {
+	clear: both;
+	overflow: hidden;
+	
+	a {
+		display: block;
+		padding: $pad;
+		border-top: 1px solid $gray-light-2;
+	}
+
+	@media all and (min-width: $bp-med) {
+
+		li {
+			float: left;
+		}
+
+		a {
+			border: 0;
+		}
+		
+	}
+}
+
+// Primary nav
+.nav-primary {
+	@media all and (min-width: $bp-med) {
+		max-height: none;
+		float: right;
+		clear: none;
+  }
+}

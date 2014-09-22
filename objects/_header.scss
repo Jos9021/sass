@@ -1,0 +1,29 @@
+.header {
+	background: $white;
+	padding: 0;
+	@extend .lc;
+	
+	@media all and (min-width: $bp-med) {
+  	border-bottom: 1px solid #dbdbdb;
+	}
+}
+
+.logo {
+	float: left;
+	max-width: 8rem;
+	margin: 0.4rem;
+
+	@media all and (min-width: $bp-med) {
+		max-width: 9rem;
+	}
+}
+
+.site-search-form {
+	overflow: hidden;
+
+	@media all and (min-width: $bp-med) {
+		float: right;
+		max-height: none;
+		margin: 0.65em 0.5em 0 0;
+	}
+}

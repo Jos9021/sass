@@ -1,0 +1,43 @@
+/*------------------------------------*\
+    $TABS
+\*------------------------------------*/
+
+// Tabs
+ul.tabs {
+	clear: both;
+	overflow: hidden;
+	
+	a {
+		display: block;
+		padding: $pad;
+		border-top: 1px solid $gray-light-2;
+		&:hover {
+  		background: $gray-light-3;
+		}
+		&.active {
+  		background: $gray-light-2;
+		}
+	}
+
+	@media all and (min-width: $bp-med) {
+		border-bottom: 1px solid $gray-light-2;
+		li {
+			float: left;
+		}
+		a {
+			border: 0;
+		}
+	}
+}
+
+// Primary tabs
+ul.tabs.primary {
+  
+}
+
+// Secondary tabs
+ul.tabs.secondary {
+  a {
+    padding: $pad-half $pad;
+  }
+}
